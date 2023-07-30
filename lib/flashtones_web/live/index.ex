@@ -8,6 +8,8 @@ defmodule FlashtonesWeb.IndexLive do
       <FtHero.ftHero />
       <Kdo.kdo />
       <Rekli.rekli />
+      <Zustanme.zustanme />
+      <Socky.socky />
       <Footer.footer />
 
     """

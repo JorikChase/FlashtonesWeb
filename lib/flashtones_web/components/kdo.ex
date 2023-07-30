@@ -21,7 +21,7 @@ defmodule Kdo do
       </div>
       <div class="kdoPersons">
         <a href="###">
-        <img src="https://placehold.co/270x240" />
+        <img src="/images/kdoMar.png" />
           <h4>
             Marcel Valouch
           </h4>
@@ -30,7 +30,7 @@ defmodule Kdo do
           </p>
         </a>
         <a href="###">
-        <img src="https://placehold.co/270x240" />
+        <img src="/images/kdoOmi.png" />
           <h4>
             Omar el Karib
           </h4>

@@ -181,7 +181,7 @@ grid-item {
   align-self: center;
   justify-content: center;
   align-content: center;
-  background-image: url("https://placehold.co/1280x720");
+  background-image: url("/images/kdo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,7 +251,7 @@ grid-item {
   flex-direction: row;
   height: 95vh;
   width: 100%;
-  padding: 1ems;
+  padding: 3em 135px;
   align-self: center;
   justify-content: center;
   align-content: center;
@@ -271,11 +271,11 @@ grid-item {
   background: rgba(255, 15, 15, 0.8);
 }
 .socky {
+  padding: 3em 135px;
   display: flex;
   flex-direction: column;
   height: 95vh;
   width: 100%;
-  padding: 1ems;
   align-self: center;
   justify-content: center;
   align-content: center;

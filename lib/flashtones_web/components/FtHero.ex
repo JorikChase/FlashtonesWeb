@@ -6,33 +6,33 @@ defmodule FtHero do
       <div class="hero">
         <div class="relative">
           <div class="carousel">
-            <img src="https://placehold.co/1920x1081" alt="Image 1" class="carousel-item">
-            <img src="https://placehold.co/1920x1082" alt="Image 2" class="carousel-item">
-            <img src="https://placehold.co/1920x1083" alt="Image 3" class="carousel-item">
-            <img src="https://placehold.co/1920x1084" alt="Image 4" class="carousel-item">
+            <img src="/images/ftHero1.png" alt="Image 1" class="carousel-item">
+            <img src="/images/kdo.png" alt="Image 2" class="carousel-item">
+            <img src="/images/ftHero1.png" alt="Image 3" class="carousel-item">
+            <img src="/images/ftHero1.png" alt="Image 4" class="carousel-item">
             <!-- Add more images as needed -->
           </div>
           <div class="carousel-nav flex justify-center mt-4">
             <button class="carousel-control noBreak" onclick="goToSlide(0)">
-              <img src="https://placehold.co/1920x1081" alt="Image 1" class="carousel-item">
+              <img src="/images/ftHero1.png" alt="Image 1" class="carousel-item">
               <a>
                 veta nahore
               </a>
             </button>
             <button class="carousel-control noBreak" onclick="goToSlide(1)">
-              <img src="https://placehold.co/1920x1082" alt="Image 2" class="carousel-item">
+              <img src="/images/kdo.png" alt="Image 2" class="carousel-item">
               <a>
                 veta nahore
               </a>
             </button>
             <button class="carousel-control noBreak" onclick="goToSlide(2)">
-              <img src="https://placehold.co/1920x1083" alt="Image 3" class="carousel-item">
+              <img src="/images/ftHero1.png" alt="Image 3" class="carousel-item">
               <a>
                 veta nahore
               </a>
             </button>
             <button class="carousel-control noBreak" onclick="goToSlide(3)">
-              <img src="https://placehold.co/1920x1084" alt="Image 4" class="carousel-item">
+              <img src="/images/ftHero1.png" alt="Image 4" class="carousel-item">
               <a>
                 veta nahore
               </a>
