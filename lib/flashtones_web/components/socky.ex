@@ -28,42 +28,42 @@ defmodule Socky do
       <grid-container class="sockyGrid">
         <grid-item>
           <a href="###" class="sockyItem">
-            <img src="###">
+            <img src="/images/sockyBig1.png">
           </a>
         </grid-item>
         <grid-item>
           <a href="###" class="sockyItem">
-            <img src="###">
+            <img src="/images/socky1.png">
           </a>
         </grid-item>
         <grid-item>
           <a href="###" class="sockyItem">
-            <img src="###">
+            <img src="/images/socky2.png">
           </a>
         </grid-item>
         <grid-item>
           <a href="###" class="sockyItem">
-            <img src="###">
+            <img src="/images/socky3.png">
           </a>
         </grid-item>
         <grid-item>
           <a href="###" class="sockyItem">
-            <img src="###">
+            <img src="/images/socky4.png">
           </a>
         </grid-item>
         <grid-item>
           <a href="###" class="sockyItem">
-            <img src="###">
+            <img src="/images/sockyBig2.png">
           </a>
         </grid-item>
         <grid-item>
           <a href="###" class="sockyItem">
-            <img src="###">
+            <img src="/images/socky5.png">
           </a>
         </grid-item>
         <grid-item>
           <a href="###" class="sockyItem">
-            <img src="###">
+            <img src="/images/socky6.png">
           </a>
         </grid-item>
       </grid-container>

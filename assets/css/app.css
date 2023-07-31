@@ -11,6 +11,21 @@ body {
   font-family: Barlow;
   line-height: 35px;
 }
+h1{
+  z-index: 1111;
+  position: absolute;
+  top: 25vh;
+  left: 10vw;
+  width: 20%;
+  color: var(--white, #FFF);
+/* H1 */
+font-family: Barlow;
+font-size: 45px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px; /* 133.333% */
+letter-spacing: 2.25px; 
+}
 h3 {
   font-family: Barlow;
   font-size: 40px;
@@ -255,6 +270,7 @@ grid-item {
   align-self: center;
   justify-content: center;
   align-content: center;
+  background: var(--flashtones-light, #F4EBD7);
 }
 .zustanme > div {
   display: flex;
@@ -266,9 +282,23 @@ grid-item {
   object-fit: contain;
 }
 .zustanme form .button {
-  padding: 0.5em 1em;
-  border-radius: 20px;
-  background: rgba(255, 15, 15, 0.8);
+  display: inline-flex;
+height: 50px;
+padding: 15px 40px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+  border-radius: 30px;
+background: var(--flashtones-link, #CFA44A);
+color: var(--white, #FFF);
+/* Button */
+font-family: Barlow;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.75px;
+text-transform: uppercase; 
 }
 .socky {
   padding: 3em 135px;
@@ -293,13 +323,13 @@ grid-item {
   align-content: center;
 }
 .socky grid-container {
+  width: 100%;
+  height: 280px;
   display: grid;
-  grid-template-columns: repeat(5, 10vw);
-  grid-template-rows: repeat(2, 10vw);
+  grid-template-columns: repeat(5, fit-content);
+  grid-template-rows: repeat(2, auto);
   grid-gap: 10px;
-  padding: 1em;
-  align-self: center;
-  justify-self: center;
+  padding: 0;
 }
 .socky grid-item:nth-child(1) {
   grid-column: 1 / 2; /* span from grid column line 1 to 3 (i.e., span 2 columns) */
@@ -331,12 +361,14 @@ grid-item {
 }
 
 .socky grid-item {
-  background-color: rgba(211, 177, 255, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(211, 177, 255, 0);
   font-size: 1.5em;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+.socky grid-item img{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
 }
 .seznamLokalit {
   display: flex;

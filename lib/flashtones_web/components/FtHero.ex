@@ -3,7 +3,15 @@ defmodule FtHero do
 
   def ftHero(assigns) do
     ~H"""
+    <h1>
+            MĚNÍME SE! <br>
+            Flashtones už nejsou jen ponožky
+        </h1>
       <div class="hero">
+      <h1>
+            MĚNÍME SE! <br>
+            Flashtones už nejsou jen ponožky
+        </h1>
         <div class="relative">
           <div class="carousel">
             <img src="/images/ftHero1.png" alt="Image 1" class="carousel-item">
@@ -70,7 +78,6 @@ defmodule FtHero do
           background-color: rgba(0, 0, 0, 0.6);
           color: #fff;
           font-size: 20px;
-          padding: 5px 10px;
           margin: -50px 5px 0 5px;
           border: none;
           cursor: pointer;
@@ -80,6 +87,13 @@ defmodule FtHero do
           justify-content: center;
           align-content: center;
           border-radius: 5px;
+          display: flex;
+          width: 220px;
+          height: 70px;
+          padding: 10px 10px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
         }
 
         .carousel-control:hover {
@@ -88,8 +102,9 @@ defmodule FtHero do
         .carousel-control > img {
           position: relative;
           border-radius: 50%;
-          width:60px;
-          height:60px;
+          width:50px;
+          height:50px;
+          margin-right: 1em;
         }
       </style>
 
