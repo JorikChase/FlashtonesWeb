@@ -4,6 +4,7 @@ defmodule FlashtonesWeb.IndexLive do
   def render(assigns) do
     ~H"""
 
+      <Plachta.plachta />
       <Menu.menu />
       <FtHero.ftHero />
       <Kdo.kdo />
