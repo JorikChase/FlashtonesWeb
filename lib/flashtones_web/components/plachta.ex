@@ -12,6 +12,36 @@ defmodule Plachta do
     <nav>
       <button class="nav">
 
+      <div class="container mx-auto py-8">
+    <div class="news-grid">
+      <div class="news-item" style="background-image: url('/images/socky1.jpg')">
+        <div class="news-item-description">
+          <a href="###">News Item 1</a>
+        </div>
+      </div>
+      <div class="news-item" style="background-image: url('/images/socky2.jpg')">
+        <div class="news-item-description">
+          <a href="###">News Item 2</a>
+        </div>
+      </div>
+      <div class="news-item" style="background-image: url('/images/socky3.jpg')">
+        <div class="news-item-description">
+          <a href="###">News Item 3</a>
+        </div>
+      </div>
+      <div class="news-item news-item-big" style="background-image: url('/images/socky4.jpg')">
+        <div class="news-item-description">
+          <a href="###">News Item 4 (Big)</a>
+        </div>
+      </div>
+      <div class="news-item" style="background-image: url('/images/socky5.jpg')">
+        <div class="news-item-description">
+          <a href="###">News Item 5</a>
+        </div>
+      </div>
+    </div>
+    </div>
+
       </button>
 
     </nav>

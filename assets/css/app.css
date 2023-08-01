@@ -12,7 +12,7 @@ body {
   line-height: 35px;
 }
 h1 {
-  z-index: 1111;
+  z-index: 111;
   position: absolute;
   top: 25vh;
   left: 10vw;
@@ -80,6 +80,7 @@ footer {
   top: 0;
   left: 0;
   right: 0;
+  bottom: 10px;
   bottom: calc(100% - 30px);
   transition: all 2s ease;
   align-content: center;
@@ -91,9 +92,14 @@ footer {
   bottom: 10px;
   overflow-y: hidden;
 }
-.nav > div {
-  padding: 1em;
-  display: none !important;
+.nav * {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 2s ease;
+}
+.nav:hover *{
+  visibility: visible;
+  opacity: 1;
 }
 .x{
   color: var(--white, #FFF);
@@ -101,7 +107,7 @@ footer {
   
   z-index: 22222;
   position: absolute;
-  top: 0;
+  top: -8px;
   right: 6px;
 height: 24px;
 padding: 6px;
@@ -501,7 +507,7 @@ nav:hover section {
   align-items: flex-start;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
-  margin: 60px;
+  margin: 80px;
   border-radius: 5px;
 }
 .menuWrap:hover {
@@ -601,6 +607,51 @@ nav:hover section {
 }
 .hero {
   height: 90vh;
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.news-item {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.news-item-big {
+  grid-column: span 2;
+}
+
+.news-item:hover {
+  transform: scale(1.05);
+}
+
+.news-item-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 8px 8px;
+}
+
+.news-item-description a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media only screen and (max-width: 768px) {
