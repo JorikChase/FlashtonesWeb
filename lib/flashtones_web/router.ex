@@ -18,6 +18,7 @@ defmodule FlashtonesWeb.Router do
     pipe_through :browser
 
     live "/index", IndexLive
+    live "/kdoJsme", KdoJsmeLive
 
     get "/", PageController, :home
   end

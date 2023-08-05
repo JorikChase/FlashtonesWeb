@@ -116,7 +116,7 @@ defmodule Menu do
           </div>
     </div>
     <div class="menuAbove" id="menuAbove">
-      <a href="###">
+      <a href="/index">
       Úvod
       </a>
       <a href="###">
@@ -128,7 +128,7 @@ defmodule Menu do
       <a href="###">
       Naše služby
       </a>
-      <a href="###">
+      <a href="/kdoJsme">
       Kdo jsme
       </a>
       <a href="###">

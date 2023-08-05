@@ -3,6 +3,18 @@ defmodule Plachta do
 
   def plachta(assigns) do
     ~H"""
+      <style>
+      /* Custom style for the links */
+      .column-link {
+        color: #000;
+        transition: color 1s ease;
+        text-align: left;
+      }
+
+      .column-link:hover {
+        color: #D9B770;
+      }
+      </style>
     <span class="x noBreak">
     zavřít
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,6 +23,67 @@ defmodule Plachta do
     </span>
     <nav>
       <button class="nav">
+
+      <div class="container mx-auto py-8">
+        <div class="flex justify-between">
+          <!-- Column 1 -->
+          <div class="w-1/3 p-4">
+            <h3 class="text-xl font-bold mb-2">
+              <a href="#" class="column-link">Column 1</a>
+            </h3>
+            <p class="text-gray-600">
+              Description for Column 1 goes here.
+            </p>
+            <div class="mt-4">
+              <ul class="list-disc list-inside">
+                <li><a href="#" class="column-link">Link 1</a></li>
+                <li><a href="#" class="column-link">Link 2</a></li>
+                <li><a href="#" class="column-link">Link 3</a></li>
+                <li><a href="#" class="column-link">Link 4</a></li>
+                <li><a href="#" class="column-link">Link 5</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="w-1/3 p-4">
+            <h3 class="text-xl font-bold mb-2">
+              <a href="#" class="column-link">Column 2</a>
+            </h3>
+            <p class="text-gray-600">
+              Description for Column 2 goes here.
+            </p>
+            <div class="mt-4">
+              <ul class="list-disc list-inside">
+                <li><a href="#" class="column-link">Link 1</a></li>
+                <li><a href="#" class="column-link">Link 2</a></li>
+                <li><a href="#" class="column-link">Link 3</a></li>
+                <li><a href="#" class="column-link">Link 4</a></li>
+                <li><a href="#" class="column-link">Link 5</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="w-1/3 p-4">
+            <h3 class="text-xl font-bold mb-2">
+              <a href="#" class="column-link">Column 3</a>
+            </h3>
+            <p class="text-gray-600">
+              Description for Column 3 goes here.
+            </p>
+            <div class="mt-4">
+              <ul class="list-disc list-inside">
+                <li><a href="#" class="column-link">Link 1</a></li>
+                <li><a href="#" class="column-link">Link 2</a></li>
+                <li><a href="#" class="column-link">Link 3</a></li>
+                <li><a href="#" class="column-link">Link 4</a></li>
+                <li><a href="#" class="column-link">Link 5</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="container mx-auto py-8">
     <div class="news-grid">
