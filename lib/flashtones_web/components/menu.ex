@@ -29,7 +29,7 @@ defmodule Menu do
             </defs>
           </svg>
         </span>
-        <span class="w-3/5 pl-4">
+        <span class="w-3/5 pl-4" id="menuHeading">
           <h4 class="text-left">
             FLASHTONES
           </h4>
@@ -54,6 +54,13 @@ defmodule Menu do
             eshop
           </a>
         </span>
+        <button class="menuBurger">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M20.75 10.8333H3.25C2.55965 10.8333 2 11.393 2 12.0833C2 12.7737 2.55965 13.3333 3.25 13.3333H20.75C21.4404 13.3333 22 12.7737 22 12.0833C22 11.393 21.4404 10.8333 20.75 10.8333Z" fill="#333333"/>
+            <path d="M3.25 7.5H20.75C21.4404 7.5 22 6.94035 22 6.25C22 5.55965 21.4404 5 20.75 5H3.25C2.55965 5 2 5.55965 2 6.25C2 6.94035 2.55965 7.5 3.25 7.5Z" fill="#333333"/>
+            <path d="M20.75 16.6666H3.25C2.55965 16.6666 2 17.2263 2 17.9166C2 18.607 2.55965 19.1666 3.25 19.1666H20.75C21.4404 19.1666 22 18.607 22 17.9166C22 17.2263 21.4404 16.6666 20.75 16.6666Z" fill="#333333"/>
+          </svg>
+          </button>
       </div>
           <div class="menuDeti">
             <a href="###">

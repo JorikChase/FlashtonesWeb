@@ -80,15 +80,15 @@ footer {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 10px;
   bottom: calc(100% - 30px);
+  width: 100%;
   transition: all 2s ease;
   align-content: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
 }
-.nav:hover{
+.nav:hover {
   bottom: 10px;
   overflow-y: hidden;
 }
@@ -97,20 +97,20 @@ footer {
   opacity: 0;
   transition: all 2s ease;
 }
-.nav:hover *{
+.nav:hover * {
   visibility: visible;
   opacity: 1;
 }
-.x{
-  color: var(--white, #FFF);
+.x {
+  color: var(--white, #fff);
   font-weight: 700;
-  
+
   z-index: 22222;
   position: absolute;
   top: -8px;
   right: 6px;
-height: 24px;
-padding: 6px;
+  height: 24px;
+  padding: 6px;
 }
 .button {
   display: flex;
@@ -152,11 +152,6 @@ padding: 6px;
 #navMapColumn {
   display: flex;
   flex-direction: column;
-}
-.navToggle {
-  position: fixed;
-  right: 0;
-  top: 0;
 }
 .navToggleButton {
   color: #e2e8f0;
@@ -605,6 +600,9 @@ nav:hover section {
   color: var(--flashtones-link, #cfa44a);
   background: var(--black-60, rgba(0, 0, 0, 0.6));
 }
+.menuBurger {
+  display: none;
+}
 .hero {
   height: 90vh;
 }
@@ -655,6 +653,9 @@ nav:hover section {
 }
 
 @media only screen and (max-width: 768px) {
+  h1{
+    width: 80%;
+  }
   .navMap {
     display: flex;
     flex-direction: column;
@@ -671,7 +672,23 @@ nav:hover section {
   .seznamLokalit > div > img {
     display: none;
   }
+  .menuWrap {
+    justify-items: space-between;
+  }
   #menu:hover {
     height: 100vh;
+  }
+  .menuAbove {
+    display: none;
+  }
+  #menuHeading {
+    width: max-content;
+  }
+  .menuLinks {
+    display: none;
+  }
+  .menuBurger {
+    display: block;
+    justify-self: flex-end;
   }
 }
