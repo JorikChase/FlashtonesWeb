@@ -643,7 +643,9 @@ nav:hover section {
   text-decoration: none;
   font-weight: bold;
 }
-
+.aktualityIg{
+  height: 90vh;
+}
 @media (max-width: 640px) {
   .news-grid {
     grid-template-columns: 1fr;
