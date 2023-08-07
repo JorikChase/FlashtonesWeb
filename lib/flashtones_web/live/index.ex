@@ -5,6 +5,7 @@ defmodule FlashtonesWeb.IndexLive do
     ~H"""
 
       <Plachta.plachta />
+      <Aktuality.aktuality />
       <Menu.menu />
       <FtHero.ftHero />
       <Kdo.kdo />
