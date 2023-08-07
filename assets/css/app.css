@@ -104,7 +104,6 @@ footer {
 .x {
   color: var(--white, #fff);
   font-weight: 700;
-
   z-index: 22222;
   position: absolute;
   top: -8px;
@@ -171,7 +170,7 @@ footer {
   color: #e2e8f0;
   transition: background-color 2s ease;
 }
-grid-container {
+.grid-container {
   display: grid;
   grid-template-columns: repeat(3, 15vw);
   grid-template-rows: repeat(2, 30vh);
@@ -181,12 +180,12 @@ grid-container {
   justify-self: center;
 }
 
-grid-item:nth-child(3) {
+.grid-item:nth-child(3) {
   grid-column: 1 / 3;
   grid-row: 2 / 3;
 }
 
-grid-item {
+.grid-item {
   background-color: rgba(211, 177, 255, 0.8);
   display: flex;
   justify-content: center;
@@ -293,7 +292,7 @@ grid-item {
 .zustanme {
   display: flex;
   flex-direction: row;
-  height: 95vh;
+  height: fit-content;
   width: 100%;
   padding: 3em 135px;
   align-self: center;
@@ -425,7 +424,6 @@ grid-item {
   right: 5vw;
   width: 270px;
   height: 465px;
-
   padding: 1em;
   display: flex;
   flex-direction: column;
@@ -668,6 +666,7 @@ nav:hover section {
   }
   .zustanme {
     flex-direction: column;
+    padding: 1em;
   }
   .seznamLokalit > div > img {
     display: none;
@@ -690,5 +689,197 @@ nav:hover section {
   .menuBurger {
     display: block;
     justify-self: flex-end;
+  }
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .socky {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .noBreak {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  span {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: #cfa44a;
+  }
+  
+  p {
+    margin-top: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .grid-item {
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .sockyItem img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* Adjust h1 size and position for smaller screens */
+  h1 {
+    font-size: 35px;
+    line-height: 50px;
+    top: 20vh;
+    left: 5vw;
+    width: 90%;
+  }
+
+  /* Adjust font-size for h3 */
+  h3 {
+    font-size: 30px;
+  }
+
+  /* Adjust font-size for h4 */
+  h4 {
+    font-size: 16px;
+  }
+
+  /* Adjust button font-size and padding */
+  .button input {
+    font-size: 13px;
+    padding: 10px 30px;
+  }
+
+  /* Hide menu items and show menuBurger for smaller screens */
+  .menuLinks {
+    display: none;
+  }
+
+  .menuBurger {
+    display: block;
+  }
+
+  /* Adjust menuDeti and menuObleceni height for smaller screens */
+  .menuWrap > .menuDeti,
+  .menuWrap > .menuObleceni {
+    padding: 40px;
+  }
+
+  /* Adjust grid columns for smaller screens */
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-item:nth-child(3) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  /* Adjust .contactCta height for smaller screens */
+  .contactCta {
+    height: 45vh;
+  }
+
+  /* Hide .rekli > span for smaller screens */
+  .rekli > span {
+    display: none;
+  }
+
+  /* Adjust padding for .socky and .rekli */
+  .socky,
+  .rekli {
+    padding: 1em;
+  }
+
+  /* Adjust grid-item sizing for .socky grid-container on smaller screens */
+  .socky grid-container {
+    height: 280px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .socky grid-item:nth-child(1) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .socky grid-item:nth-child(3) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .socky grid-item:nth-child(4) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .socky grid-item:nth-child(5) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .socky grid-item:nth-child(6) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .socky grid-item:nth-child(7) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .socky grid-item:nth-child(8) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  /* Adjust padding for .lokalityGrid on smaller screens */
+  .lokalityGrid {
+    padding: 0 1em;
+  }
+
+  /* Hide .menuAbove for smaller screens */
+  .menuAbove {
+    display: none;
+  }
+
+  /* Adjust .menuWrap height for smaller screens */
+  .menuWrap:hover {
+    height: 100vh;
+  }
+
+  /* Adjust .news-item height for smaller screens */
+  .news-item {
+    height: 150px;
+  }
+  
+}
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
