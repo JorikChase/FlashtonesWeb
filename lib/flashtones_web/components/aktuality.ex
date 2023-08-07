@@ -6,7 +6,7 @@ defmodule Aktuality do
 
       <script>
 
-        const accessToken = 'unlisted-twist';
+        const accessToken = 'IGQVJVSDdzZAkR5cW40YUdxbC13TTJQWmN4QURQZAkFjNFNnTk45aEZANMkYzMWw4V2laMjljQjZA4c1RGVFE4cXBDT0h4TmVXNnlhckVDdl9hZA2pXQ3hhRlEyNTZACaXdlMXZA4aHBzekw3Nkd5eGdMR08xawZDZD';
 
           async function fetchInstagramPosts() {
             try {
@@ -56,24 +56,38 @@ defmodule Aktuality do
       </script>
 
       <style>
+        .instagram-feed {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+          }
 
-      .instagram-feed {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+          .instagram-post {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
 
-      .instagram-post {
-        margin: 10px;
-        width: calc(33.33% - 20px);
-        box-sizing: border-box;
-      }
+          .instagram-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+          }
 
-      .instagram-post img {
-        max-width: 100%;
-        border-radius: 5px;
-      }
+          .instagram-post img {
+            width: 100%;
+            display: block;
+          }
 
+          .instagram-post.large {
+            grid-column: span 2;
+            grid-row: 2;
+          }
       </style>
 
 
