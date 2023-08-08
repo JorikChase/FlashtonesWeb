@@ -1,4 +1,4 @@
-defmodule FlashtonesWeb.KdoJsmeLive do
+defmodule FlashtonesWeb.ZsIndexLive do
   use FlashtonesWeb, :live_view
 
   def render(assigns) do
@@ -6,7 +6,6 @@ defmodule FlashtonesWeb.KdoJsmeLive do
 
       <Plachta.plachta />
       <Menu.menu />
-      <HeadSmall.headSmall />
       <KdoJsmeComponent.kdoJsmeComponent />
       <Socky.socky />
       <Footer.footer />

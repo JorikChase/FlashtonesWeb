@@ -18,7 +18,14 @@ defmodule FlashtonesWeb.Router do
     pipe_through :browser
 
     live "/index", IndexLive
+    live "/aktuality", AktualityLive
+    live "/faq", FaqLive
+    live "/kontakty", KontaktyLive
     live "/kdoJsme", KdoJsmeLive
+    live "/sluzby", SluzbyLive
+    live "/hodnoceni", HodnoceniLive
+    live "/zsIndex", ZsIndexLive
+    live "/zsLanding", ZsLandingLive
 
     get "/", PageController, :home
   end

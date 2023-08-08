@@ -52,12 +52,12 @@ a {
   line-height: normal;
   letter-spacing: 0.75px;
   text-transform: uppercase;
-  transition: all 1s ease;
+  transition: all 0.25s ease;
 }
 main {
   width: 100vw;
   height: 100vh;
-  transition: background-color 2s ease;
+  transition: background-color 0.25s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +82,7 @@ footer {
   right: 0;
   bottom: calc(100% - 30px);
   width: 100%;
-  transition: all 2s ease;
+  transition: all 0.5s ease;
   align-content: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.8);
@@ -95,7 +95,7 @@ footer {
 .nav * {
   visibility: hidden;
   opacity: 0;
-  transition: all 2s ease;
+  transition: all 0.25s ease;
 }
 .nav:hover * {
   visibility: visible;
@@ -168,7 +168,7 @@ footer {
   margin: 0.5em;
   border-radius: 5px;
   color: #e2e8f0;
-  transition: background-color 2s ease;
+  transition: background-color 0.25s ease;
 }
 .grid-container {
   display: grid;
@@ -329,10 +329,11 @@ footer {
   text-transform: uppercase;
 }
 .socky {
+  position: relative;
   padding: 3em 135px;
   display: flex;
   flex-direction: column;
-  height: 95vh;
+  height: fit-content;
   width: 100%;
   align-self: center;
   justify-content: center;
@@ -495,19 +496,17 @@ nav:hover section {
   left: 0;
   right: 0;
   height: 60px;
-  transition: all 2s ease;
+  transition: all 0.25s ease;
   display: flex;
   align-items: flex-start;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   margin: 80px;
-  border-radius: 5px;
 }
 .menuWrap:hover {
   height: 370px;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(15px);
-  border-radius: 0;
 }
 .menu {
   z-index: 1100;
@@ -550,7 +549,7 @@ nav:hover section {
   height: 0;
   padding: 70px 75px;
   float: right;
-  transition: all 1s ease;
+  transition: all 0.25s ease;
 }
 .menuWrap > .menuObleceni {
   visibility: hidden;
@@ -563,7 +562,7 @@ nav:hover section {
   height: 0;
   padding: 70px 75px;
   float: right;
-  transition: all 1s ease;
+  transition: all 0.25s ease;
 }
 .menuWrap:hover > .menuDeti {
   visibility: visible;
@@ -575,7 +574,7 @@ nav:hover section {
 }
 .menuAbove {
   z-index: 1000;
-  transition: all 2s ease;
+  transition: all 0.25s ease;
   position: fixed;
   padding-right: 65px;
   top: 40px;

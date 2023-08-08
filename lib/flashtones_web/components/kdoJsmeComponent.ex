@@ -5,9 +5,6 @@ defmodule KdoJsmeComponent do
     ~H"""
       <style>
         /* Custom styles for the navigation bar */
-        .container{
-          margin-top: 20vh;
-        }
         .nav-item {
           cursor: pointer;
           transition: background-color 0.2s ease;

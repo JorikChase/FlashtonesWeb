@@ -119,25 +119,25 @@ defmodule Menu do
       <a href="/index">
       Úvod
       </a>
-      <a href="###">
+      <a href="/aktuality#aktuality">
       Aktuality
       </a>
-      <a href="###">
+      <a href="/aktuality#blog">
       Blog
       </a>
-      <a href="###">
+      <a href="/sluzby">
       Naše služby
       </a>
       <a href="/kdoJsme">
       Kdo jsme
       </a>
-      <a href="###">
+      <a href="/faq">
       Časté dotazy
       </a>
-      <a href="###">
+      <a href="/hodnoceni">
       Hodnocení
       </a>
-      <a href="###">
+      <a href="/kontakty">
       Kontakty
       </a>
     </div>
